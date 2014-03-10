@@ -1,0 +1,166 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <Review>
+    <Id>23</Id>
+    <Title>Sonic Youth: Daydream Nation live in Roundhouse, London</Title>
+    <Summary>Summary for item 23</Summary>
+    <Body>Body for item 23</Body>
+    <GenreId>5</GenreId>
+  </Review>
+  <Review>
+    <Id>24</Id>
+    <Title>Sonic Youth: Daydream Nation live at Lowlands, Biddinghuizen</Title>
+    <Summary>Summary for item 24</Summary>
+    <Body>Body for item 24</Body>
+    <GenreId>5</GenreId>
+  </Review>
+  <Review>
+    <Id>25</Id>
+    <Title>Norah Jones - Not Too Late</Title>
+    <Summary>Summary for item 25</Summary>
+    <Body>Body for item 25</Body>
+    <GenreId>3</GenreId>
+  </Review>
+  <Review>
+    <Id>26</Id>
+    <Title>DJ Tiesto - In Search of Sunrise 6</Title>
+    <Summary>Summary for item 26</Summary>
+    <Body>Body for item 26</Body>
+    <GenreId>12</GenreId>
+  </Review>
+  <Review>
+    <Id>27</Id>
+    <Title>DJ Tiesto - Elements of Life</Title>
+    <Summary>Summary for item 27</Summary>
+    <Body>Body for item 27</Body>
+    <GenreId>12</GenreId>
+  </Review>
+  <Review>
+    <Id>28</Id>
+    <Title>Death Magnetic by Metallica</Title>
+    <Summary>Summary for item 28</Summary>
+    <Body>Body for item 28</Body>
+    <GenreId>4</GenreId>
+  </Review>
+  <Review>
+    <Id>30</Id>
+    <Title>Wait for Evolution by De Staat</Title>
+    <Summary>Summary for item 30</Summary>
+    <Body>Body for item 30</Body>
+    <GenreId>2</GenreId>
+  </Review>
+  <Review>
+    <Id>31</Id>
+    <Title>Love Hate &amp; Then There's you by The Von Bondies </Title>
+    <Summary>Summary for item 31</Summary>
+    <Body>Body for item 31</Body>
+    <GenreId>9</GenreId>
+  </Review>
+  <Review>
+    <Id>32</Id>
+    <Title>The Pains of Being Pure at Heart - One of the best new British bands from the U.S.?</Title>
+    <Summary>Summary for item 32</Summary>
+    <Body>Body for item 32</Body>
+    <GenreId>5</GenreId>
+  </Review>
+  <Review>
+    <Id>33</Id>
+    <Title>Invaders Must Die by The Prodigy - The Return Of The Prodigy</Title>
+    <Summary>Summary for item 33</Summary>
+    <Body>Body for item 33</Body>
+    <GenreId>12</GenreId>
+  </Review>
+  <Review>
+    <Id>34</Id>
+    <Title>P.J. Harvey &amp; John Parish - A Woman a Man Walked By</Title>
+    <Summary>Summary for item 34</Summary>
+    <Body>Body for item 34</Body>
+    <GenreId>5</GenreId>
+  </Review>
+  <Review>
+    <Id>35</Id>
+    <Title>Eminem - Relapse - He's back!!!</Title>
+    <Summary>Summary for item 35</Summary>
+    <Body>Body for item 35</Body>
+    <GenreId>1</GenreId>
+  </Review>
+  <Review>
+    <Id>36</Id>
+    <Title>Travelling the Face of the Globe by Oi Va Voi - A genuinely fresh and enthralling sound</Title>
+    <Summary>Summary for item 36</Summary>
+    <Body>Body for item 36</Body>
+    <GenreId>4</GenreId>
+  </Review>
+  <Review>
+    <Id>37</Id>
+    <Title>Battle for the Sun by Placebo - Possibly the best album of 2009 already</Title>
+    <Summary>Summary for item 37</Summary>
+    <Body>Body for item 37</Body>
+    <GenreId>5</GenreId>
+  </Review>
+  <Review>
+    <Id>38</Id>
+    <Title>Sonic Youth: The Eternal - Takes time to get used but then....</Title>
+    <Summary>Summary for item 38</Summary>
+    <Body>Body for item 38</Body>
+    <GenreId>5</GenreId>
+  </Review>
+  <Review>
+    <Id>39</Id>
+    <Title>Sixteen Billion Drum Kicks by Renato Cohen</Title>
+    <Summary>Summary for item 39</Summary>
+    <Body>Body for item 39</Body>
+    <GenreId>12</GenreId>
+  </Review>
+  <Review>
+    <Id>40</Id>
+    <Title>Sounds Of The Universe by Depeche Mode - Overhyped or a master piece?</Title>
+    <Summary>Summary for item 40</Summary>
+    <Body>Body for item 40</Body>
+    <GenreId>2</GenreId>
+  </Review>
+  <Review>
+    <Id>41</Id>
+    <Title>First Album by Miss Kittin &amp; The Hacker</Title>
+    <Summary>Summary for item 41</Summary>
+    <Body>Body for item 41</Body>
+    <GenreId>12</GenreId>
+  </Review>
+  <Review>
+    <Id>42</Id>
+    <Title>Farm by Dinosaur Jr</Title>
+    <Summary>Summary for item 42</Summary>
+    <Body>Body for item 42</Body>
+    <GenreId>5</GenreId>
+  </Review>
+  <Review>
+    <Id>43</Id>
+    <Title>21st Century Breakdown by Green Day</Title>
+    <Summary>Summary for item 43-Updated</Summary>
+    <Body>Body for item 43</Body>
+    <GenreId>6</GenreId>
+  </Review>
+  <Review>
+    <Id>44</Id>
+    <Title>Wait For Me by Moby</Title>
+    <Summary>Summary for item 44</Summary>
+    <Body>Body for item 44</Body>
+    <GenreId>12</GenreId>
+  </Review>
+  <Review>
+    <Id>45</Id>
+    <Title>Twinkle Twinkle Little Star</Title>
+    <Summary>The song of bright star in the sky</Summary>
+    <Body>Kids song</Body>
+    <GenreId>1</GenreId>
+  </Review>
+  <Review>
+    <Id>46</Id>
+    <Title>Little monkey</Title>
+    <Summary>a song about little monkey</Summary>
+    <Body>Little monkey 
+Little monkey
+Happy little monkey</Body>
+    <GenreId>13</GenreId>
+  </Review>
+</DocumentElement>

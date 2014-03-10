@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataTable>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Review" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Review">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Id" type="xs:int" minOccurs="0" />
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="Summary" type="xs:string" minOccurs="0" />
+                <xs:element name="Body" type="xs:string" minOccurs="0" />
+                <xs:element name="GenreId" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+    <DocumentElement>
+      <Review diffgr:id="Review1" msdata:rowOrder="0">
+        <Id>23</Id>
+        <Title>Sonic Youth: Daydream Nation live in Roundhouse, London</Title>
+        <Summary>Summary for item 23</Summary>
+        <Body>Body for item 23</Body>
+        <GenreId>5</GenreId>
+      </Review>
+      <Review diffgr:id="Review2" msdata:rowOrder="1">
+        <Id>24</Id>
+        <Title>Sonic Youth: Daydream Nation live at Lowlands, Biddinghuizen</Title>
+        <Summary>Summary for item 24</Summary>
+        <Body>Body for item 24</Body>
+        <GenreId>5</GenreId>
+      </Review>
+      <Review diffgr:id="Review3" msdata:rowOrder="2">
+        <Id>25</Id>
+        <Title>Norah Jones - Not Too Late</Title>
+        <Summary>Summary for item 25</Summary>
+        <Body>Body for item 25</Body>
+        <GenreId>3</GenreId>
+      </Review>
+      <Review diffgr:id="Review4" msdata:rowOrder="3">
+        <Id>26</Id>
+        <Title>DJ Tiesto - In Search of Sunrise 6</Title>
+        <Summary>Summary for item 26</Summary>
+        <Body>Body for item 26</Body>
+        <GenreId>12</GenreId>
+      </Review>
+      <Review diffgr:id="Review5" msdata:rowOrder="4">
+        <Id>27</Id>
+        <Title>DJ Tiesto - Elements of Life</Title>
+        <Summary>Summary for item 27</Summary>
+        <Body>Body for item 27</Body>
+        <GenreId>12</GenreId>
+      </Review>
+      <Review diffgr:id="Review6" msdata:rowOrder="5">
+        <Id>28</Id>
+        <Title>Death Magnetic by Metallica</Title>
+        <Summary>Summary for item 28</Summary>
+        <Body>Body for item 28</Body>
+        <GenreId>4</GenreId>
+      </Review>
+      <Review diffgr:id="Review7" msdata:rowOrder="6">
+        <Id>30</Id>
+        <Title>Wait for Evolution by De Staat</Title>
+        <Summary>Summary for item 30</Summary>
+        <Body>Body for item 30</Body>
+        <GenreId>2</GenreId>
+      </Review>
+      <Review diffgr:id="Review8" msdata:rowOrder="7">
+        <Id>31</Id>
+        <Title>Love Hate &amp; Then There's you by The Von Bondies </Title>
+        <Summary>Summary for item 31</Summary>
+        <Body>Body for item 31</Body>
+        <GenreId>9</GenreId>
+      </Review>
+      <Review diffgr:id="Review9" msdata:rowOrder="8">
+        <Id>32</Id>
+        <Title>The Pains of Being Pure at Heart - One of the best new British bands from the U.S.?</Title>
+        <Summary>Summary for item 32</Summary>
+        <Body>Body for item 32</Body>
+        <GenreId>5</GenreId>
+      </Review>
+      <Review diffgr:id="Review10" msdata:rowOrder="9">
+        <Id>33</Id>
+        <Title>Invaders Must Die by The Prodigy - The Return Of The Prodigy</Title>
+        <Summary>Summary for item 33</Summary>
+        <Body>Body for item 33</Body>
+        <GenreId>12</GenreId>
+      </Review>
+      <Review diffgr:id="Review11" msdata:rowOrder="10">
+        <Id>34</Id>
+        <Title>P.J. Harvey &amp; John Parish - A Woman a Man Walked By</Title>
+        <Summary>Summary for item 34</Summary>
+        <Body>Body for item 34</Body>
+        <GenreId>5</GenreId>
+      </Review>
+      <Review diffgr:id="Review12" msdata:rowOrder="11">
+        <Id>35</Id>
+        <Title>Eminem - Relapse - He's back!!!</Title>
+        <Summary>Summary for item 35</Summary>
+        <Body>Body for item 35</Body>
+        <GenreId>1</GenreId>
+      </Review>
+      <Review diffgr:id="Review13" msdata:rowOrder="12">
+        <Id>36</Id>
+        <Title>Travelling the Face of the Globe by Oi Va Voi - A genuinely fresh and enthralling sound</Title>
+        <Summary>Summary for item 36</Summary>
+        <Body>Body for item 36</Body>
+        <GenreId>4</GenreId>
+      </Review>
+      <Review diffgr:id="Review14" msdata:rowOrder="13">
+        <Id>37</Id>
+        <Title>Battle for the Sun by Placebo - Possibly the best album of 2009 already</Title>
+        <Summary>Summary for item 37</Summary>
+        <Body>Body for item 37</Body>
+        <GenreId>5</GenreId>
+      </Review>
+      <Review diffgr:id="Review15" msdata:rowOrder="14">
+        <Id>38</Id>
+        <Title>Sonic Youth: The Eternal - Takes time to get used but then....</Title>
+        <Summary>Summary for item 38</Summary>
+        <Body>Body for item 38</Body>
+        <GenreId>5</GenreId>
+      </Review>
+      <Review diffgr:id="Review16" msdata:rowOrder="15">
+        <Id>39</Id>
+        <Title>Sixteen Billion Drum Kicks by Renato Cohen</Title>
+        <Summary>Summary for item 39</Summary>
+        <Body>Body for item 39</Body>
+        <GenreId>12</GenreId>
+      </Review>
+      <Review diffgr:id="Review17" msdata:rowOrder="16">
+        <Id>40</Id>
+        <Title>Sounds Of The Universe by Depeche Mode - Overhyped or a master piece?</Title>
+        <Summary>Summary for item 40</Summary>
+        <Body>Body for item 40</Body>
+        <GenreId>2</GenreId>
+      </Review>
+      <Review diffgr:id="Review18" msdata:rowOrder="17">
+        <Id>41</Id>
+        <Title>First Album by Miss Kittin &amp; The Hacker</Title>
+        <Summary>Summary for item 41</Summary>
+        <Body>Body for item 41</Body>
+        <GenreId>12</GenreId>
+      </Review>
+      <Review diffgr:id="Review19" msdata:rowOrder="18">
+        <Id>42</Id>
+        <Title>Farm by Dinosaur Jr</Title>
+        <Summary>Summary for item 42</Summary>
+        <Body>Body for item 42</Body>
+        <GenreId>5</GenreId>
+      </Review>
+      <Review diffgr:id="Review20" msdata:rowOrder="19">
+        <Id>43</Id>
+        <Title>21st Century Breakdown by Green Day</Title>
+        <Summary>Summary for item 43-Updated</Summary>
+        <Body>Body for item 43</Body>
+        <GenreId>6</GenreId>
+      </Review>
+      <Review diffgr:id="Review21" msdata:rowOrder="20">
+        <Id>44</Id>
+        <Title>Wait For Me by Moby</Title>
+        <Summary>Summary for item 44</Summary>
+        <Body>Body for item 44</Body>
+        <GenreId>12</GenreId>
+      </Review>
+      <Review diffgr:id="Review22" msdata:rowOrder="21">
+        <Id>45</Id>
+        <Title>Twinkle Twinkle Little Star</Title>
+        <Summary>The song of bright star in the sky</Summary>
+        <Body>Kids song</Body>
+        <GenreId>1</GenreId>
+      </Review>
+      <Review diffgr:id="Review23" msdata:rowOrder="22">
+        <Id>46</Id>
+        <Title>Little monkey</Title>
+        <Summary>a song about little monkey</Summary>
+        <Body>Little monkey 
+Little monkey
+Happy little monkey</Body>
+        <GenreId>13</GenreId>
+      </Review>
+    </DocumentElement>
+  </diffgr:diffgram>
+</DataTable>
