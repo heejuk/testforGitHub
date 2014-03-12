@@ -45,63 +45,78 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
             string[] filename = { @"c:\temp\test.xml", @"c:\temp\test_Serialize.xml"};
-            string[] option_serialize = {"WriteXML", "XMLSerializer"};
+            string[] rootname = { "DocumentElement", "DataTable"};
 
-            // serialize using WriteXML Method
-            serialize(filename[0], option_serialize[0]);
-            deserialize(filename[0], option_serialize[0]);
 
-            // serialize using XMLserializer
-            serialize(filename[1], option_serialize[1]);
-            deserialize(filename[1], option_serialize[1]);
-           
+            // serialize   : DataTable.WriteXML()  
+            // deserialize : System.Xml.Serialization.XmlSerializer.Deserialize()
+            serializeUsingDataTable(filename[0]);
+            deserializeUsingXmlDeserializer(filename[0], rootname[0]);
+
+
+            // serialize   : System.Xml.Serialization.XmlSerializer.Deserialize()
+            // deserialize : DataSet.ReadXml()
+            serializeUsingXmlSerializer(filename[1]);
+            deserializeUsingDataSet(filename[1]);
+
+            // not working...
+            deserializeUsingXmlDeserializer(filename[1], rootname[1]);
+
             Console.ReadLine();
         }
 
-        public static void deserialize(string filename, string option_serialize)
+        public static void deserializeUsingDataSet(string filename)
         {
-            XmlSerializer serializer;
+            Console.WriteLine("Deserialize using XMLSerializer file....");
 
-            switch (option_serialize)
-            {
-                case "WriteXML" :
-                    Console.WriteLine("Deserialize using WriteXML() file....");
-                    serializer = new XmlSerializer(typeof(Reviews), new XmlRootAttribute("DocumentElement"));
-                    break;
-                case "XMLSerializer":
-                default :
-                    Console.WriteLine("Deserialize using XMLSerializer file....");
-                    serializer = new XmlSerializer(typeof(Reviews), new XmlRootAttribute("DataTable"));
-                    break;
-            }
+            DataSet dataSet = new DataSet();
+            DataTable dataTable = new DataTable("Review");
+            dataTable.Columns.Add("Id", typeof(int));
+            dataTable.Columns.Add("Title", typeof(string));
+            dataTable.Columns.Add("Summary", typeof(string));
+            dataTable.Columns.Add("Body", typeof(string));
+            dataTable.Columns.Add("GenreId", typeof(int));
+            dataSet.Tables.Add(dataTable);
 
+            FileStream fs = new FileStream(filename, System.IO.FileMode.Open);
+            dataTable.BeginLoadData();
+            dataSet.ReadXml(fs, XmlReadMode.IgnoreSchema);
+            dataTable.EndLoadData();
+            fs.Close();
+           
+            insertDB(dataSet.Tables["Review"]);
+
+        }
+
+        public static void deserializeUsingXmlDeserializer(string filename, string rootname)
+        {
+            Console.WriteLine("Deserialize....");
+
+            XmlSerializer serializer = new XmlSerializer(typeof(Reviews), new XmlRootAttribute(rootname));
             FileStream fs = new FileStream(filename, System.IO.FileMode.Open);
             Reviews xmlData = (Reviews)serializer.Deserialize(fs);
             fs.Close();
 
             insertDB(xmlData);
-
         }
 
-        public static void serialize(string filename, string option_serialize)
+        public static void serializeUsingDataTable(string filename)
         {
-            DataTable dataTable = getDataTable();
+            Console.WriteLine("Serialize using DataTable.WriteXML()...."); 
 
-            switch (option_serialize)
-            {
-                case "WriteXML":
-                    Console.WriteLine("Serialize using WriteXML()....");
-                    dataTable.WriteXml(filename);
-                    break;
-                case "XMLSerializer":
-                default:
-                    Console.WriteLine("Serialize using XMLSerializer....");
-                    XmlSerializer serializer = new XmlSerializer(dataTable.GetType(), "");
-                    StreamWriter file = new StreamWriter(filename);
-                    serializer.Serialize(file, dataTable);
-                    file.Close();
-                    break;
-            }
+            DataTable dataTable = getDataTable();
+            dataTable.WriteXml(filename);
+        }
+
+        public static void serializeUsingXmlSerializer(string filename)
+        {
+            Console.WriteLine("Serialize using XMLSerializer....");
+            
+            DataTable dataTable = getDataTable();
+            XmlSerializer serializer = new XmlSerializer(dataTable.GetType(), "");
+            StreamWriter file = new StreamWriter(filename);
+            serializer.Serialize(file, dataTable);
+            file.Close();
         }
 
         public static DataTable getDataTable()
@@ -146,6 +161,34 @@ namespace ConsoleApplication1
             sqlConn.Close();
         }
 
+        public static void insertDB(DataTable dataTable)
+        {
+            SqlConnection sqlConn = new SqlConnection(connectionString);
+            sqlConn.Open();
+
+            SqlCommand command = new SqlCommand();
+            command.CommandText = "insert into TestReview (Id, Title, Summary, Body, GenreId) values (@Id, @Title, @Summary, @Body, @GenreId)";
+            command.Parameters.Add("@Id", SqlDbType.Int);
+            command.Parameters.Add("@Title", SqlDbType.NVarChar);
+            command.Parameters.Add("@Summary", SqlDbType.NVarChar);
+            command.Parameters.Add("@Body", SqlDbType.NVarChar);
+            command.Parameters.Add("@GenreId", SqlDbType.Int);
+            command.Connection = sqlConn;
+
+            for (int i = 0; i < dataTable.Rows.Count; i++)
+            {
+                command.Parameters["@Id"].Value = dataTable.Rows[i]["Id"];
+                command.Parameters["@Title"].Value = dataTable.Rows[i]["Title"];
+                command.Parameters["@Summary"].Value = dataTable.Rows[i]["Summary"];
+                command.Parameters["@Body"].Value = dataTable.Rows[i]["Body"];
+                command.Parameters["@GenreId"].Value = dataTable.Rows[i]["GenreId"];
+                command.ExecuteNonQuery();
+
+                Console.WriteLine(i.ToString() + " row(s) inserted");
+            }
+
+            sqlConn.Close();
+        }
     }
 
 
