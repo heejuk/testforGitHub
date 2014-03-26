@@ -29,7 +29,7 @@
 					<li><a href="default.aspx">About C#</a></li>
 					<li><a href="">About ASP.NET</a></li>
 					<li><a href="">About MS-SQL</a></li>
-                    <li><a href="WebForm1.aspx">JQuery Test</a></li>
+                    <li><a href="WebForm1.aspx">JQuery Test!</a></li>
 				</ul>
 			</nav>
 		</section>
