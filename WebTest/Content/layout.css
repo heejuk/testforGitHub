@@ -1,0 +1,27 @@
+﻿a:link {text-decoration: none;}
+a:hover {text-decoration: underline;}
+			
+section#sidebar{
+	float: left;
+	width: 25%;
+}
+			
+section#posts{
+	float:right;
+	width:74%;
+}
+			
+section#posts aside{
+	float: right;
+	width: 35%;
+	margin-left: 5%;
+	font-size: 20px;
+	line-height: 40px;
+}
+			
+footer#page_footer{
+	clear: both;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
