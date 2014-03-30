@@ -17,7 +17,6 @@
 				<a href="">MENU1 | </a>
 				<a href="">MENU2 | </a>
 				<a href="">MENU3 | </a>
-				<a href="">MENU4</a>
 			</nav>
 		</header>
 		<section id="sidebar">
